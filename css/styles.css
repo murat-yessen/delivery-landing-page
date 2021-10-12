@@ -1,6 +1,5 @@
 :root {
   --header-height: 3rem;
-
   --hue: 45;
   --sat: 98%;
   --first-color: ;
@@ -14,7 +13,6 @@
   --container-color: ;
   --scrool-bar-color: ;
   --scrool-thumb-color: ;
-
   --body-font: ;
   --biggest-font-size: ;
   --h2-size: ;
@@ -22,17 +20,13 @@
   --normal-size: ;
   --small-size: ;
   --smaller-size: ;
-
   --font-semi-bold: ;
   --font-bold: ;
-
-
   --mb-0_5: ;
   --mb-0_75: ;
   --mb-1: ;
   --mb-1_5: ;
   --mb-2: ;
-
   --z-tooltip: ;
   --z-fixed: ;
 }
@@ -47,3 +41,4 @@
     --smaller-size: ;
   }
 }
+/*# sourceMappingURL=styles.css.map */
