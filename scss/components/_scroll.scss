@@ -23,3 +23,18 @@
 .show-scroll {
   bottom: 3rem;
 }
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: var(--scrool-bar-color);
+
+  &-thumb {
+    background-color: var(--scrool-thumb-color);
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: var(--text-color-light);
+    }
+  }
+}

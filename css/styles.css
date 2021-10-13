@@ -62,6 +62,8 @@ body {
   font-size: var(--normal-font-size);
   background-color: --body-color;
   color: var(--text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 h1, h2, h3 {
@@ -359,6 +361,21 @@ img {
   bottom: 3rem;
 }
 
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: var(--scrool-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrool-thumb-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
+
 .security__container {
   gap: 2.5rem;
 }
@@ -378,7 +395,7 @@ img {
   background-color: var(--container-color);
   -webkit-box-shadow: 0 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
           box-shadow: 0 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
-  padding: 2rem 1.5rem;
+  padding: 2rem 0.75rem;
   border-radius: 1rem;
   text-align: center;
 }
@@ -425,5 +442,32 @@ img {
   display: -ms-grid;
   display: grid;
   gap: 1.5rem;
+}
+
+body.dark-theme {
+  --first-color: hsl(var(--hue), var(--sat), 75%);
+  --title-color: hsl(var(--hue), 4%, 95%);
+  --text-color: hsl(var(--hue), 4%, 80%);
+  --body-color: hsl(var(--hue), 8%, 13%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+  --scrool-bar-color: hsl(var(--hue), 4%, 32%);
+  --scrool-thumb-color: hsl(var(--hue), 4%, 24%);
+}
+
+.change-theme {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.2rem;
+  color: var(--title-color);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.dark-theme .main {
+  background-color: var(--body-color);
+}
+
+.dark-theme .footer {
+  background-color: var(--container-color);
 }
 /*# sourceMappingURL=styles.css.map */
