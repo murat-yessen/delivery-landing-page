@@ -1,3 +1,4 @@
+@import 'config/variables';
 @import 'base/base';
 @import 'components/about';
 @import 'components/app';
@@ -6,10 +7,9 @@
 @import 'components/footer';
 @import 'components/header';
 @import 'components/home';
-@import 'components/mediaqueries';
 @import 'components/scroll';
 @import 'components/security';
 @import 'components/services';
-@import 'config/variables';
 @import 'layout/layout';
 @import 'theme/theme';
+@import 'components/mediaqueries';
