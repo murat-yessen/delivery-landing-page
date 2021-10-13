@@ -91,6 +91,30 @@ img {
   text-align: center;
 }
 
+.app__container {
+  gap: 2.5rem;
+}
+
+.app__data {
+  text-align: center;
+}
+
+.app__description {
+  margin-bottom: var(--mb-1_5);
+}
+
+.app__buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[2];
+      grid-template-columns: repeat(2, -webkit-max-content);
+      grid-template-columns: repeat(2, max-content);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+}
+
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -118,6 +142,87 @@ img {
 
 .button-link:hover {
   background-color: transparent;
+}
+
+.button-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.25rem;
+          column-gap: 0.25rem;
+  padding: 0.75rem 1rem;
+}
+
+.button__icon {
+  font-size: 1.5rem;
+}
+
+.contact__container {
+  padding-bottom: 3rem;
+}
+
+.contact__description {
+  text-align: center;
+}
+
+.contact__content {
+  row-gap: 0.75rem;
+}
+
+.contact__address {
+  font-size: var(--small-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.contact__information {
+  font-weight: initial;
+  color: var(--title-color);
+}
+
+.footer {
+  background-color: var(--first-color-lighten);
+  padding-bottom: 2rem;
+}
+
+.footer__container {
+  row-gap: 2rem;
+}
+
+.footer__logo, .footer__title {
+  font-size: var(--h3-size);
+  margin-bottom: var(--mb-0_75);
+}
+
+.footer__logo {
+  display: inline-block;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.footer__description, .footer__links {
+  font-size: var(--small-size);
+  row-gap: 0.5rem;
+}
+
+.footer__link {
+  color: var(--title-color);
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.footer__social-link {
+  font-size: 1.25rem;
+  color: var(--title-color);
 }
 
 .header {

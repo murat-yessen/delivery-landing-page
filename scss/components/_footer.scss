@@ -1,0 +1,40 @@
+.footer {
+  background-color: var(--first-color-lighten);
+  padding-bottom: 2rem;
+
+  &__container {
+    row-gap: 2rem;
+  }
+
+  &__logo,
+  &__title {
+    font-size: var(--h3-size);
+    margin-bottom: var(--mb-0_75);
+  }
+
+  &__logo {
+    display: inline-block;
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+  }
+
+  &__description,
+  &__links {
+    font-size: var(--small-size);
+    row-gap: 0.5rem;
+  }
+
+  &__link {
+    color: var(--title-color);
+  }
+
+  &__social {
+    display: flex;
+    column-gap: 1.5rem;
+
+    &-link {
+      font-size: 1.25rem;
+      color: var(--title-color);
+    }
+  }
+}
